@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Route, Router} from "react-router-dom";
+import HeaderContainer from "./components/Header/HeaderContainer";
+import history from './utils/history'
+import LoginContainer from "./components/Auth/LoginContainer";
+import ProfileContainer from "./components/Profile/ProfileContainer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router history={history}>
+            <HeaderContainer/>
+            {/*<Route part="/profile" component={ProfileContainer} />*/}
+            <Route parth="/login" component={LoginContainer}/>
+        </Router>
+    );
 }
 
 export default App;
