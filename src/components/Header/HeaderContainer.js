@@ -1,17 +1,28 @@
 import React from 'react'
 import {connect} from "react-redux";
 import Header from "./Header";
+import {signOut} from "../../actions/auth";
 
 class HeaderContainer extends React.Component {
+
+    handleSignOut = (e) => {
+        e.preventDefault()
+        this.props.signOut()
+    }
     render() {
         return (
-            <Header />
+            <Header
+                handleSignOut={this.handleSignOut}
+                isAuth={this.props.auth.isAuth}
+            />
         )
     }
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state) => {
+    return {
+        auth: state.auth
+    }
+}
 
-})
-
-export default  connect(mapStateToProps, {})(HeaderContainer)
+export default  connect(mapStateToProps, {signOut})(HeaderContainer)
