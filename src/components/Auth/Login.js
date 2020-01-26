@@ -5,9 +5,11 @@ const Login = (props) => {
     return (
         <div>
             <h1>Login</h1>
-            <span>{!!props.isA && '1'}</span>
+            <span>{!!props.isAuth && 1}</span>
+            {!!props.error_message && <span>{props.error_message}</span>}
             <LoginReduxForm onSubmit={props.handleLogin} />
             <button onClick={props.handleSignOut}>Log Out </button>
+            <a>{props.id}</a>
         </div>
     )
 }

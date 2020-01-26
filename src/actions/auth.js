@@ -2,31 +2,44 @@ import * as axios from 'axios'
 import * as types from '../constants/auth'
 
 export const logIn = ({email, password}) => async dispatch => {
-    const r = await axios({
-        method: 'POST',
-        url: 'https://mysterious-reef-29460.herokuapp.com/api/v1/validate',
-        data: {
-            email,
-            password
-        },
-        headers: {
-            'content-type': 'application/json'
-        }
-    })
-
-    console.log(r)
-    // debugger
-    if (r.data.status === 'ok') {
-        const id = r.data.data.id
-        localStorage.setItem('id', id)
+    try {
         dispatch({
-            type: types.AUTH_SUCCESS,
-            payload: {
-                id: r.data.data.id
+            type: types.AUTH_REQUEST,
+            payload: {request: false,}
+        })
+        const r = await axios({
+            method: 'POST',
+            url: 'https://mysterious-reef-29460.herokuapp.com/api/v1/validate',
+            data: {
+                email,
+                password
+            },
+            headers: {
+                'content-type': 'application/json'
             }
         })
-
+        if (r.data.status === 'ok') {
+            const id = r.data.data.id
+            localStorage.setItem('id', id)
+            dispatch({
+                type: types.AUTH_SUCCESS,
+                id: r.data.data.id,
+            })
+        } else {
+            dispatch ({
+                type: types.AUTH_FAILURE,
+                error_message: r.data.message === 'wrong_email_or_password'
+                ? 'error @ or pas'
+                :  r.data.message
+            })
+        }
+    } catch (err) {
+        dispatch ({
+            type: types.AUTH_FAILURE,
+             error_message: 'error server'
+        })
     }
+
 }
 
 export const signOut = () => dispatch => {
