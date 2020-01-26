@@ -19,7 +19,6 @@ class LoginContainer extends React.Component {
                 handleSignOut={this.handleSignOut}
                 isAuth={this.props.auth.isAuth}
                 error_message={this.props.auth.error_message}
-                id={this.props.auth.id}
             />
         )
     }

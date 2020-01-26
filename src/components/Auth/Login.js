@@ -1,15 +1,15 @@
 import React, {useState, useEffect} from 'react'
 import {Field, reduxForm} from "redux-form";
+import s from './Login.module.css'
 
 const Login = (props) => {
     return (
-        <div>
-            <h1>Login</h1>
-            <span>{!!props.isAuth && 1}</span>
-            {!!props.error_message && <span>{props.error_message}</span>}
-            <LoginReduxForm onSubmit={props.handleLogin} />
-            <button onClick={props.handleSignOut}>Log Out </button>
-            <a>{props.id}</a>
+        <div className={s.wrapper}>
+            <div className={s.loginWrapper}>
+                <h1>Login</h1>
+                {!!props.error_message && <span className={s.loginError}>* {props.error_message}</span>}
+                <LoginReduxForm onSubmit={props.handleLogin}  handleSignOut={props.handleSignOut}/>
+            </div>
         </div>
     )
 }

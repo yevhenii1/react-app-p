@@ -10,8 +10,9 @@ function App() {
     return (
         <Router history={history}>
             <HeaderContainer/>
-            {/*<Route part="/profile" component={ProfileContainer} />*/}
-            <Route parth="/login" component={LoginContainer}/>
+
+            <Route path="/profile" component={ProfileContainer} />
+            <Route path="/login" component={LoginContainer}/>
         </Router>
     );
 }

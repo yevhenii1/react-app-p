@@ -1,0 +1,44 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+.loginWrapper {
+    text-align: center;
+    width: 300px;
+    position: relative;
+}
+h1 {
+    margin-bottom: 30px;
+}
+.loginError {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    color: #C92230;
+    font-size: 18px;
+}
+form input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    border: 1px solid #282c34;
+}
+form button {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+    background-color: #770BD5;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #AE4ABF;
+
+}

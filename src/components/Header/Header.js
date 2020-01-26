@@ -1,12 +1,10 @@
 import React from 'react'
-import {NavLink} from "react-router-dom";
+import Nav from "../Nav/Nav";
 
 const Header = (props) => {
     return (
         <header>
-            <div>
-                <NavLink to="/login">Login</NavLink>
-            </div>
+            <Nav />
         </header>
     )
 }

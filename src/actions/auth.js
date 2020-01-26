@@ -1,5 +1,6 @@
 import * as axios from 'axios'
 import * as types from '../constants/auth'
+import history from '../utils/history'
 
 export const logIn = ({email, password}) => async dispatch => {
     try {
@@ -25,11 +26,12 @@ export const logIn = ({email, password}) => async dispatch => {
                 type: types.AUTH_SUCCESS,
                 id: r.data.data.id,
             })
+            history.push('/profile')
         } else {
             dispatch ({
                 type: types.AUTH_FAILURE,
                 error_message: r.data.message === 'wrong_email_or_password'
-                ? 'error @ or pas'
+                ? 'wrong email or password'
                 :  r.data.message
             })
         }
