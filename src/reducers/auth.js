@@ -1,44 +1,30 @@
-import * as axios from 'axios'
-import history from '../utils/history'
-const AUTH_SUCCESS = 'AUTH_SUCCESS'
+import * as types from '../constants/auth'
 
 const initialState = {
     request: false,
-    status: false,
-    message: '',
-
+    id: null,
+    isAuth: false,
 }
 
 const auth = (state = initialState, action) => {
+    // debugger
     switch (action.type) {
-        case AUTH_SUCCESS:
+        case types.AUTH_SUCCESS:
             return {
                 ...state,
                 request: action.payload.request,
-                status: action.payload.status,
+                isAuth: true,
+            }
+        case types.AUTH_SIGNOUT:
+            return {
+                ...state,
+                isAuth: false,
             }
         default:
             return state
     }
 }
 
-export const logIn = (username, password) => dispatch => {
-
-    axios.post(`https://mysterious-reef-29460.herokuapp.com/api/v1/validate`, {username, password})
-        .then((r) => {
-        // debugger
-            if(r.status === 200){
-                dispatch({
-                    type: AUTH_SUCCESS,
-                    payload: {
-                        status: r.status
-                    }
-                })
-            }
-            console.log(r.status)
-            // history.push('/profile')
-        })
-}
 
 
 export default auth

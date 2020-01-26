@@ -1,23 +1,31 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {Field, reduxForm} from "redux-form";
 
 const Login = (props) => {
     return (
         <div>
             <h1>Login</h1>
+            <span>{!!props.isA && '1'}</span>
             <LoginReduxForm onSubmit={props.handleLogin} />
+            <button onClick={props.handleSignOut}>Log Out </button>
         </div>
     )
 }
 
 const LoginForm = (props) => {
+    const [email, setEmail] = useState('max@test.com')
+    const [password, setPassword] = useState('12345')
+
+    useEffect(() => {
+        props.initialize({email: email, password: password })
+    })
     return (
         <form onSubmit={props.handleSubmit}>
             <div>
                 <Field
                     type="text"
                     component="input"
-                    name="username"
+                    name="email"
                     placeholder="E-mail"
                 />
             </div>

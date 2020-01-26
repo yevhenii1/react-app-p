@@ -1,17 +1,24 @@
 import React from 'react'
 import Login from './Login'
 import {connect} from "react-redux";
-import {logIn} from '../../reducers/auth'
+import {logIn, signOut} from '../../actions/auth'
 
 class LoginContainer extends React.Component {
 
-    hadleLogin = (username, password) => {
-        this.props.logIn(username, password)
+    handleLogin = (email, password) => {
+        this.props.logIn(email, password)
+    }
+    handleSignOut = () => {
+        this.props.signOut()
     }
 
     render() {
         return (
-            <Login handleLogin={this.hadleLogin}/>
+            <Login
+                handleLogin={this.handleLogin}
+                handleSignOut={this.handleSignOut}
+                isA={this.props.auth.isAuth}
+            />
         )
     }
 }
@@ -19,7 +26,8 @@ class LoginContainer extends React.Component {
 const mapStateToProps = (state) => {
     return {
         auth: state.auth
+
     }
 }
 
-export default connect(mapStateToProps, {logIn})(LoginContainer)
+export default connect(mapStateToProps, {logIn, signOut})(LoginContainer)
