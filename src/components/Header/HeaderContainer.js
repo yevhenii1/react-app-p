@@ -14,6 +14,7 @@ class HeaderContainer extends React.Component {
             <Header
                 handleSignOut={this.handleSignOut}
                 isAuth={this.props.auth.isAuth}
+                id={this.props.auth.id}
             />
         )
     }

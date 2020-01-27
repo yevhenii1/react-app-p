@@ -1,23 +1,31 @@
 import React from 'react'
 import {connect} from "react-redux";
-import history from '../../utils/history'
+import {getUserInfo} from "../../actions/userInfo";
+import Profile from "./Profile";
 
 class ProfileContainer extends React.Component {
 
+    componentDidMount() {
+        this.props.getUserInfo()
+    }
 
 
     render() {
-        {!this.props.auth.isAuth && history.push('/login')}
         return (
-            <h1>Profile</h1>
+            <Profile
+                city={this.props.userInfo.city}
+                languages={this.props.userInfo.languages}
+                social={this.props.userInfo.social}
+            />
         )
     }
 }
 
 const mapStateToProps = (state) => {
     return {
-        auth: state.auth
+        auth: state.auth,
+        userInfo: state.userInfo,
     }
 }
 
-export default connect(mapStateToProps, {})(ProfileContainer)
+export default connect(mapStateToProps, {getUserInfo})(ProfileContainer)

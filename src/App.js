@@ -10,7 +10,6 @@ function App() {
     return (
         <Router history={history}>
             <HeaderContainer/>
-
             <Route path="/profile" component={ProfileContainer} />
             <Route path="/login" component={LoginContainer}/>
         </Router>

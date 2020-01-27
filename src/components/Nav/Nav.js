@@ -5,7 +5,7 @@ const Nav = (props) => {
     return (
         <>
             <NavLink to="/profile">Profile</NavLink>
-            <NavLink to="/login">Login</NavLink>
+
         </>
     )
 }
