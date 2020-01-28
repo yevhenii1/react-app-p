@@ -2,6 +2,7 @@ import React from 'react'
 import {connect} from "react-redux";
 import {getUserInfo} from "../../actions/userInfo";
 import Profile from "./Profile";
+import {Redirect} from "react-router-dom";
 
 class ProfileContainer extends React.Component {
 
@@ -9,14 +10,16 @@ class ProfileContainer extends React.Component {
         this.props.getUserInfo()
     }
 
-
     render() {
         return (
-            <Profile
-                city={this.props.userInfo.city}
-                languages={this.props.userInfo.languages}
-                social={this.props.userInfo.social}
-            />
+            <>
+                {!this.props.auth.isAuth && <Redirect to="/" />}
+                <Profile
+                    city={this.props.userInfo.city}
+                    languages={this.props.userInfo.languages}
+                    social={this.props.userInfo.social}
+                />
+            </>
         )
     }
 }

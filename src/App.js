@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Route, Router} from "react-router-dom";
+import {Route, Router, Switch} from "react-router-dom";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import history from './utils/history'
 import LoginContainer from "./components/Auth/LoginContainer";
@@ -11,9 +11,12 @@ function App() {
     return (
         <Router history={history}>
             <HeaderContainer/>
-            <Route path="/profile" component={ProfileContainer} />
-            <Route path="/login" component={LoginContainer}/>
-            <Route path="/news" component={NewsContainer}/>
+            <Switch>
+                <Route path="/profile" component={ProfileContainer}/>
+                <Route path="/login" component={LoginContainer}/>
+                <Route path="/news" component={NewsContainer}/>
+                <Route exact path="/" component={NewsContainer}/>
+            </Switch>
         </Router>
     );
 }

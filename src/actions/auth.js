@@ -52,4 +52,5 @@ export const signOut = () => dispatch => {
             request: false
         }
     })
+    history.push('/')
 }

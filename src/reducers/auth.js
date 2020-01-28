@@ -5,7 +5,7 @@ const id = localStorage.getItem('id')
 const initialState = {
     request: false,
     id: id,
-    isAuth: false,
+    isAuth: !!id,
     error_message: '',
 }
 

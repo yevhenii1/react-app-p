@@ -8,7 +8,7 @@ const Header = (props) => {
         <header>
             <Nav />
             <div>
-                {props.id === 1
+                {!!props.isAuth
                     ? <a href="#" onClick={props.handleSignOut}>Log out</a>
                     : <NavLink to="/login">Login</NavLink>
                 }
