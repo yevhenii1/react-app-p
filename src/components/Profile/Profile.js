@@ -1,12 +1,12 @@
 import React from 'react'
 
 const Profile = (props) => {
-    let socialSorted  = []
-    if(props.social) {
+    let socialSorted = []
+    if (props.social) {
         props.social.forEach((socialItem, index) => {
             if (socialItem.label === 'web') {
                 const webSocial = props.social.splice(index, 1)
-                socialSorted  = [].concat(webSocial, props.social)
+                socialSorted = [].concat(webSocial, props.social)
             }
         })
     }
@@ -14,6 +14,7 @@ const Profile = (props) => {
     return (
         <div>
             <h1>Profile</h1>
+
             <span>Город: {props.city}</span>
             <h4>Знание языков:</h4>
             <ul>
@@ -21,7 +22,7 @@ const Profile = (props) => {
             </ul>
             <h4>Ссылки:</h4>
             <ul>
-                {socialSorted .map(s =>
+                {socialSorted.map(s =>
                     <li key={s.label}>
                         <a href={s.link}>{s.label}</a>
                     </li>
