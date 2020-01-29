@@ -11,7 +11,6 @@ const initialState = {
 }
 
 const userInfo = (state = initialState, action) => {
-    console.log(action)
     switch (action.type) {
         case types.USER_INFO_REQUEST:
             return {

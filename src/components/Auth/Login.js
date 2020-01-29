@@ -25,7 +25,7 @@ const LoginForm = (props) => {
     // useEffect(() => {
     //     props.initialize({email: email, password: password })
     // })
-    const {handleSubmit, submitting, pristine, reset} = props
+    const {handleSubmit, submitting, pristine} = props
     return (
         <form onSubmit={handleSubmit}>
             <div>

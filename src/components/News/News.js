@@ -3,8 +3,8 @@ import s from './News.module.css'
 import Prelaoder from '../commen/Preloader/index'
 
 const News = (props) => {
-    if(!props.newsList){
-        return <Prelaoder />
+    if (!props.newsList) {
+        return <Prelaoder/>
     }
     return (
         <div className={s.wrapper}>

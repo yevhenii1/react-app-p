@@ -1,5 +1,5 @@
-import * as axios from 'axios'
 import * as types from '../constants/userInfo'
+import {userInfoAPI} from "../utils/api";
 
 
 export const getUserInfo = () => async dispatch =>{
@@ -8,11 +8,7 @@ export const getUserInfo = () => async dispatch =>{
             type: types.USER_INFO_REQUEST,
             request: false,
         })
-        const id = localStorage.getItem('id')
-        const r = await axios ({
-            method: 'GET',
-            url: `https://mysterious-reef-29460.herokuapp.com/api/v1/user-info/${id}`
-        })
+        const r = await userInfoAPI.userInfo()
         if(r.data.status === 'ok') {
             dispatch ({
                 type: types.USER_INFO_SUCCESS,
