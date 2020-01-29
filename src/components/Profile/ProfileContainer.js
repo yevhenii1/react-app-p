@@ -7,8 +7,15 @@ import {Redirect} from "react-router-dom";
 class ProfileContainer extends React.Component {
 
     componentDidMount() {
-        this.props.getUserInfo()
+        this.timer = setTimeout(() => {
+            this.props.getUserInfo()
+        }, 1800)
+
     }
+    componentWillUnmount() {
+        clearTimeout(this.timer)
+    }
+
 
     render() {
         return (
@@ -18,6 +25,7 @@ class ProfileContainer extends React.Component {
                     city={this.props.userInfo.city}
                     languages={this.props.userInfo.languages}
                     social={this.props.userInfo.social}
+                    userId={this.props.userInfo.userId}
                 />
             </>
         )

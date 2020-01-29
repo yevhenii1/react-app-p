@@ -1,4 +1,5 @@
 import React from 'react'
+import Preloader from "../commen/Preloader/index";
 
 const Profile = (props) => {
     let socialSorted = []
@@ -10,7 +11,9 @@ const Profile = (props) => {
             }
         })
     }
-
+    if (!props.userId) {
+        return <Preloader />
+    }
     return (
         <div>
             <h1>Profile</h1>

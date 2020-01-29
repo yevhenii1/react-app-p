@@ -4,11 +4,14 @@ import {getNews} from "../../actions/news";
 import News from "./News";
 
 class NewsContainer extends React.Component {
-
     componentDidMount() {
-        this.props.getNews()
+        this.timer = setTimeout(() => {
+            this.props.getNews()
+        }, 1800)
     }
-
+    componentWillUnmount() {
+        clearTimeout(this.timer)
+    }
     render() {
 
         return (

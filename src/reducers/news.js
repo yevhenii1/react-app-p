@@ -3,7 +3,7 @@ import * as types from '../constants/news'
 
 const initialState = {
     request: false,
-    newsList: [],
+    newsList: null,
     error_message: '',
 }
 
