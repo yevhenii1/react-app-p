@@ -1,6 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import {Field, reduxForm} from "redux-form";
 import s from './Login.module.css'
+import {Input} from "../commen/forms/FormsControls/FormControls";
+import {minLengthCreator, required} from "../../utils/validator";
+// import {Props as submitting} from "../../../node_modules/redux-form/es/ConnectedFields.types";
+
 
 const Login = (props) => {
     return (
@@ -13,33 +17,36 @@ const Login = (props) => {
         </div>
     )
 }
-
+const minLenhth = minLengthCreator(5)
 const LoginForm = (props) => {
-    const [email, setEmail] = useState('max@test.com')
-    const [password, setPassword] = useState('12345')
-
-    useEffect(() => {
-        props.initialize({email: email, password: password })
-    })
+    // const [email, setEmail] = useState('max@test.com')
+    // const [password, setPassword] = useState('12345')
+    //
+    // useEffect(() => {
+    //     props.initialize({email: email, password: password })
+    // })
+    const {handleSubmit, submitting, pristine, reset} = props
     return (
-        <form onSubmit={props.handleSubmit}>
+        <form onSubmit={handleSubmit}>
             <div>
                 <Field
                     type="text"
-                    component="input"
+                    component={Input}
                     name="email"
                     placeholder="E-mail"
+                    validate={[required]}
                 />
             </div>
             <div>
                 <Field
                     type="text"
-                    component="input"
+                    component={Input}
                     name="password"
                     placeholder='password'
+                    validate={[required, minLenhth]}
                 />
             </div>
-            <button>Log In</button>
+            <button type="submit" disabled={pristine || submitting}>Log In</button>
         </form>
     )
 }

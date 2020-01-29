@@ -4,7 +4,7 @@ import Preloader from "../commen/Preloader/index";
 const Profile = (props) => {
     let socialSorted = []
     if (props.social) {
-        props.social.forEach((socialItem, index) => {
+        [...props.social].forEach((socialItem, index) => {
             if (socialItem.label === 'web') {
                 const webSocial = props.social.splice(index, 1)
                 socialSorted = [].concat(webSocial, props.social)

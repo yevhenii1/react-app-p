@@ -6,7 +6,7 @@
 }
 .loginWrapper {
     text-align: center;
-    width: 300px;
+    width: 320px;
     position: relative;
 }
 h1 {
@@ -14,16 +14,16 @@ h1 {
 }
 .loginError {
     position: absolute;
-    top: 62px;
+    top: 72px;
     left: 0;
     color: #C92230;
-    font-size: 18px;
+    font-size: 12px;
 }
 form input {
     box-sizing: border-box;
     width: 100%;
     padding: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 32px;
     border-radius: 3px;
     border: 1px solid #282c34;
 }
@@ -41,4 +41,8 @@ form button {
 form button:hover {
     background-color: #AE4ABF;
 
+}
+form button:disabled{
+    background-color: #acbfba;
+    cursor: not-allowed;
 }

@@ -1,0 +1,23 @@
+.formControl.error input,
+.formControl.error textarea {
+    border: 1px solid #C92230;
+}
+.formControl.error span {
+    color: #C92230;
+}
+.formControl {
+    position: relative;
+}
+.formSummaryError {
+    border: #C92230 1px solid;
+    color: #C92230;
+}
+.formTextError {
+    display: block;
+    -ms-text-align: left;
+    text-align: left;
+    font-size: 12px;
+    position: absolute;
+    top: -20px;
+
+}

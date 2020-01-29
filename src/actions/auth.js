@@ -31,7 +31,7 @@ export const logIn = ({email, password}) => async dispatch => {
             dispatch ({
                 type: types.AUTH_FAILURE,
                 error_message: r.data.message === 'wrong_email_or_password'
-                ? 'wrong email or password'
+                ? 'Неправильный  email или password'
                 :  r.data.message
             })
         }
