@@ -6,6 +6,7 @@ import history from './utils/history'
 import LoginContainer from "./components/Auth/LoginContainer";
 import ProfileContainer from "./components/Profile/ProfileContainer";
 import NewsContainer from "./components/News/NewsContainer";
+import Page404 from "./components/404/Page404";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Route path="/login" component={LoginContainer}/>
                 <Route path="/news" component={NewsContainer}/>
                 <Route exact path="/" component={NewsContainer}/>
+                <Route  path="*" component={Page404}/>
             </Switch>
         </Router>
     );
