@@ -8,6 +8,7 @@ const initialState = {
     languages: [],
     social: [],
     error_message: '',
+    isLoading: false,
 }
 
 const userInfo = (state = initialState, action) => {
@@ -16,6 +17,7 @@ const userInfo = (state = initialState, action) => {
             return {
                 ...state,
                 request: action.request,
+                isLoading: true,
             }
         case types.USER_INFO_SUCCESS:
             return {
@@ -24,8 +26,12 @@ const userInfo = (state = initialState, action) => {
                 city: action.payload.city,
                 languages: action.payload.languages,
                 social: action.payload.social,
+                isLoading: false,
             }
         case types.USER_INFO_FAILURE:
+            return {
+                isLoading: false,
+            }
         default:
             return state
     }

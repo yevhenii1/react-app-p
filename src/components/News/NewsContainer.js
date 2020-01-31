@@ -5,18 +5,15 @@ import News from "./News";
 
 class NewsContainer extends React.Component {
     componentDidMount() {
-        this.timer = setTimeout(() => {
-            this.props.getNews()
-        }, 1800)
+          this.props.getNews()
     }
-    componentWillUnmount() {
-        clearTimeout(this.timer)
-    }
+
     render() {
 
         return (
             <News
                 newsList={this.props.news.newsList}
+                isLoading={this.props.news.isLoading}
             />
         )
     }

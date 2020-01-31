@@ -1,10 +1,10 @@
 import * as types from '../constants/news'
 
-
 const initialState = {
     request: false,
-    newsList: null,
+    newsList: [],
     error_message: '',
+    isLoading: false,
 }
 
 const news = (state = initialState, action) => {
@@ -12,18 +12,21 @@ const news = (state = initialState, action) => {
         case types.NEWS_REQUEST:
             return {
                 ...state,
-                request: action.request
+                request: action.request,
+                isLoading: true,
             }
         case types.NEWS_SUCCESS:
             return {
                 ...state,
                 newsList: action.newsList,
+                isLoading: false,
             }
 
         case types.NEWS_FAILURE:
             return {
                 ...state,
-                error_message: action.error_message
+                error_message: action.error_message,
+                isLoading: false,
             }
         default:
             return state

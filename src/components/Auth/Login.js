@@ -3,8 +3,6 @@ import {Field, reduxForm} from "redux-form";
 import s from './Login.module.css'
 import {Input} from "../commen/forms/FormsControls/FormControls";
 import {minLengthCreator, required} from "../../utils/validator";
-// import {Props as submitting} from "../../../node_modules/redux-form/es/ConnectedFields.types";
-
 
 const Login = (props) => {
     return (

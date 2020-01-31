@@ -3,7 +3,7 @@ import s from './News.module.css'
 import Prelaoder from '../commen/Preloader/index'
 
 const News = (props) => {
-    if (!props.newsList) {
+    if (!!props.isLoading) {
         return <Prelaoder/>
     }
     return (

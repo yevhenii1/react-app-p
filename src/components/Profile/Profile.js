@@ -11,7 +11,7 @@ const Profile = (props) => {
             }
         })
     }
-    if (!props.userId) {
+    if (!!props.isLoading) {
         return <Preloader />
     }
     return (
