@@ -1,17 +1,18 @@
-.header {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
 .navLink {
     margin-right: 15px;
     font-size: 17px;
     color: #AE4ABF;
 
 }
-.navLink:hover {
+navLink:hover {
     color: #61dafb;
 }
 .selected {
     color: #61dafb;
+}
+.disabled {
+    margin-right: 15px;
+    font-size: 17px;
+    pointer-events: none;
+    color: #e0e0e0;
 }

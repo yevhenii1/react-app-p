@@ -2,6 +2,7 @@ import React from 'react'
 import Login from './Login'
 import {connect} from "react-redux";
 import {logIn} from '../../actions/auth'
+import {Redirect} from "react-router-dom";
 
 class LoginContainer extends React.Component {
 
@@ -11,10 +12,13 @@ class LoginContainer extends React.Component {
 
     render() {
         return (
-            <Login
-                handleLogin={this.handleLogin}
-                error_message={this.props.auth.error_message}
-            />
+            <>
+                {!!this.props.auth.isAuth && <Redirect to="/" />}
+                <Login
+                    handleLogin={this.handleLogin}
+                    error_message={this.props.auth.error_message}
+                />
+            </>
         )
     }
 }

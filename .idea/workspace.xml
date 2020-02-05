@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8739dfab-2f41-4197-812b-0586d4565c06" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Nav/Nav.module.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Auth/LoginContainer.js" afterPath="$PROJECT_DIR$/src/components/Auth/LoginContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Header/Header.js" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Nav/Nav.js" afterPath="$PROJECT_DIR$/src/components/Nav/Nav.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Profile/Profile.js" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/auth.js" afterPath="$PROJECT_DIR$/src/reducers/auth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/userInfo.js" afterPath="$PROJECT_DIR$/src/reducers/userInfo.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,31 +22,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reducers/auth.js">
+      <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Auth/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="20">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginContainer.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginContainer.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Auth/LoginContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/reducers/news.js">
+      <file leaf-file-name="ProfileContainer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Profile/ProfileContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="21" />
+            <state relative-caret-position="160">
+              <caret line="15" column="64" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -50,8 +57,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -74,14 +81,11 @@
         <option value="$PROJECT_DIR$/src/components/Auth/LogIn.js" />
         <option value="$PROJECT_DIR$/src/constants/auth.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
-        <option value="$PROJECT_DIR$/src/components/Header/Header.module.css" />
         <option value="$PROJECT_DIR$/src/constants/userInfo.js" />
         <option value="$PROJECT_DIR$/src/components/Header/HeaderContainer.js" />
         <option value="$PROJECT_DIR$/src/constants/news.js" />
-        <option value="$PROJECT_DIR$/src/components/Nav/Nav.js" />
         <option value="$PROJECT_DIR$/src/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/components/News/News.module.css" />
-        <option value="$PROJECT_DIR$/src/components/Header/Header.js" />
         <option value="$PROJECT_DIR$/src/components/commen/Preloader/index.js" />
         <option value="$PROJECT_DIR$/src/utils/validator.js" />
         <option value="$PROJECT_DIR$/src/components/commen/forms/FormsControls/FormControl.module.css" />
@@ -91,18 +95,22 @@
         <option value="$PROJECT_DIR$/src/actions/news.js" />
         <option value="$PROJECT_DIR$/src/utils/api.js" />
         <option value="$PROJECT_DIR$/src/actions/userInfo.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/404/Page404.js" />
         <option value="$PROJECT_DIR$/src/components/404/Page404.module.css" />
-        <option value="$PROJECT_DIR$/src/reducers/userInfo.js" />
-        <option value="$PROJECT_DIR$/src/components/Profile/Profile.js" />
-        <option value="$PROJECT_DIR$/src/components/Profile/ProfileContainer.js" />
         <option value="$PROJECT_DIR$/src/components/News/News.js" />
         <option value="$PROJECT_DIR$/src/components/News/NewsContainer.js" />
         <option value="$PROJECT_DIR$/src/reducers/news.js" />
         <option value="$PROJECT_DIR$/src/components/Auth/Login.js" />
-        <option value="$PROJECT_DIR$/src/components/Auth/LoginContainer.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/reducers/userInfo.js" />
+        <option value="$PROJECT_DIR$/src/components/Profile/ProfileContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/Profile/Profile.js" />
         <option value="$PROJECT_DIR$/src/reducers/auth.js" />
+        <option value="$PROJECT_DIR$/src/components/Nav/Nav.js" />
+        <option value="$PROJECT_DIR$/src/components/Nav/Nav.module.css" />
+        <option value="$PROJECT_DIR$/src/components/Header/Header.module.css" />
+        <option value="$PROJECT_DIR$/src/components/Header/Header.js" />
+        <option value="$PROJECT_DIR$/src/components/Auth/LoginContainer.js" />
       </list>
     </option>
   </component>
@@ -125,7 +133,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1346" />
     <option name="height" value="444" />
   </component>
@@ -145,7 +153,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,6 +196,20 @@
               <item name="react-app-p" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Header" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="react-app-p" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-app-p" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Nav" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="react-app-p" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-app-p" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="News" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -208,6 +229,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -261,16 +283,18 @@
       <workItem from="1580332108166" duration="2951000" />
       <workItem from="1580498466365" duration="2751000" />
       <workItem from="1580916832338" duration="511000" />
+      <workItem from="1580920001688" duration="5987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75685000" />
+    <option name="totallyTimeSpent" value="81672000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1346" height="444" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20139968" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19894099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -303,14 +327,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Nav/Nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Header/Header.module.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -445,13 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/constants/news.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -484,20 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="3343" column="6" lean-forward="false" selection-start-line="3343" selection-start-column="6" selection-end-line="3343" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/HeaderContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -558,13 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/userInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/news.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -582,14 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Nav/Nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/404/Page404.module.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -601,30 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Profile/ProfileContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/userInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -644,40 +600,120 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/news.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/userInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/userInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Profile/Profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        <state relative-caret-position="553">
+          <caret line="30" column="17" lean-forward="false" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/HeaderContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="140">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Nav/Nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="57" lean-forward="false" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Nav/Nav.module.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.module.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="71" lean-forward="false" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Auth/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
+        <state relative-caret-position="20">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Profile/ProfileContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="15" column="64" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Auth/LoginContainer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/news.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="21" />
+        <state relative-caret-position="220">
+          <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
           <folding />
         </state>
       </provider>

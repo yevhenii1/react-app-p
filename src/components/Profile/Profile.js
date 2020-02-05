@@ -11,7 +11,7 @@ const Profile = (props) => {
             }
         })
     }
-    if (!!props.isLoading) {
+    if (props.isLoading) {
         return <Preloader />
     }
     return (
@@ -21,7 +21,10 @@ const Profile = (props) => {
             <span>Город: {props.city}</span>
             <h4>Знание языков:</h4>
             <ul>
-                {props.languages.map(l => <li key={l}>{l}</li>)}
+                {props.languages
+                    ? props.languages.map(l => <li key={l}>{l}</li>)
+                    : 'Loading...'
+                }
             </ul>
             <h4>Ссылки:</h4>
             <ul>

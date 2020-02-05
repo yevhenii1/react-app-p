@@ -14,13 +14,14 @@ const auth = (state = initialState, action) => {
         case types.AUTH_REQUEST:
             return {
                 ...state,
+                isAuth: false,
                 request: action.payload.request,
             }
         case types.AUTH_SUCCESS:
             return {
                 ...state,
                 id: action.id,
-                isAuth: true,
+                isAuth: !!id,
             }
         case types.AUTH_FAILURE:
             return {
