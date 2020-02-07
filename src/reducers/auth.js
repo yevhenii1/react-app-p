@@ -5,7 +5,7 @@ const id = localStorage.getItem('id')
 const initialState = {
     request: false,
     id: id,
-    isAuth: !!id,
+    isAuth: false,
     error_message: '',
 }
 
@@ -21,7 +21,7 @@ const auth = (state = initialState, action) => {
             return {
                 ...state,
                 id: action.id,
-                isAuth: !!id,
+                isAuth: true,
             }
         case types.AUTH_FAILURE:
             return {

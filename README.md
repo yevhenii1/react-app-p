@@ -1,33 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## React app
 
-## Available Scripts
+Open DEMO -> [https://yevhenii.herokuapp.com/login](https://yevhenii.herokuapp.com/login)<br />
 
-In the project directory, you can run:
+Login -> max@test.com
 
-### `yarn start`
+Password -> 12345
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+An application  built with:
+- React
+- Redux
+- React-router-dom
+- Redux-form 
+- JavaScript 
+- CSS
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Installation and Setup Instructions
 
-### `yarn test`
+#### Example:  
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
-### `yarn build`
+Installation:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npm install`  
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+To Start Server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`npm start`  
 
-### `yarn eject`
+To Visit App:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
+`localhost:3000` 
