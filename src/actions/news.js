@@ -11,7 +11,7 @@ export const getNews = () => async dispatch => {
         if(r.data.status === 'ok'){
             dispatch({
                 type: types.NEWS_SUCCESS,
-                newsList: r.data.data,
+                payload: r.data.data,
             })
         } else {
             dispatch({
@@ -22,7 +22,9 @@ export const getNews = () => async dispatch => {
     }catch (err) {
         dispatch({
             type: types.NEWS_FAILURE,
-            error_message: 'server error'
+            payload: {
+                error_message: 'server error'
+            }
         })
     }
 }

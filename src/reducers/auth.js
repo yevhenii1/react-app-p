@@ -26,6 +26,7 @@ const auth = (state = initialState, action) => {
         case types.AUTH_FAILURE:
             return {
                 ...state,
+                isAuth: false,
                 error_message: action.error_message,
             }
         case types.AUTH_SIGNOUT:

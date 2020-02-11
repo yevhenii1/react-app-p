@@ -18,14 +18,14 @@ const news = (state = initialState, action) => {
         case types.NEWS_SUCCESS:
             return {
                 ...state,
-                newsList: action.newsList,
+                newsList: action.payload,
                 isLoading: false,
             }
 
         case types.NEWS_FAILURE:
             return {
                 ...state,
-                error_message: action.error_message,
+                error_message: action.payload.error_message,
                 isLoading: false,
             }
         default:

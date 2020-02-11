@@ -15,8 +15,8 @@ function App() {
             <Switch>
                 <Route path="/profile" component={ProfileContainer}/>
                 <Route path="/login" component={LoginContainer}/>
-                <Route  path="/" component={NewsContainer}/>
-                <Route  path="*" component={Page404}/>
+                <Route exact path="/" component={NewsContainer}/>
+                <Route path="*" component={Page404}/>
             </Switch>
         </Router>
     );
